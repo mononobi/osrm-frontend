@@ -21,4 +21,4 @@ WORKDIR /src
 
 # Run App
 EXPOSE 9966
-CMD ["npm", "start"]
+CMD ["npm", "run", "start-index"]
