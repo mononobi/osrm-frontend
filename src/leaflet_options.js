@@ -54,7 +54,7 @@ module.exports = {
   },
   services: [{
     label: 'Car (fastest)',
-    path: 'http://localhost:5000/route/v1'
+    path: 'https://routing.orinoco.net/nav/route/v1'
   }],
   layer: [{
     'openstreetmap.org': osm,
