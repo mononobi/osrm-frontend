@@ -50,18 +50,18 @@ module.exports = {
     waypoints: [],
     language: 'en',
     alternative: 0,
-    layer: streets
+    layer: osm
   },
   services: [{
     label: 'Car (fastest)',
-    path: 'https://router.project-osrm.org/route/v1'
+    path: 'http://localhost:5000/route/v1'
   }],
   layer: [{
+    'openstreetmap.org': osm,
+    'openstreetmap.de.org': osm_de,
     'Mapbox Streets': streets,
     'Mapbox Outdoors': outdoors,
-    'Mapbox Streets Satellite': satellite,
-    'openstreetmap.org': osm,
-    'openstreetmap.de.org': osm_de
+    'Mapbox Streets Satellite': satellite
   }],
   overlay: {
     'Hiking': hiking,
@@ -69,10 +69,10 @@ module.exports = {
     'Small Components': small_components
   },
   baselayer: {
-    one: streets,
-    two: outdoors,
-    three: satellite,
-    four: osm,
-    five: osm_de
+    one: osm,
+    two: osm_de,
+    three: streets,
+    four: outdoors,
+    five: satellite
   }
 };
