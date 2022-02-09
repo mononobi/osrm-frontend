@@ -45,7 +45,7 @@ var streets = L.tileLayer(mapboxTileURL, {
 
 module.exports = {
   defaultState: {
-    center: L.latLng(38.8995,-77.0269),
+    center: L.latLng(53.550341,10.000654),
     zoom: 13,
     waypoints: [],
     language: 'en',
@@ -54,7 +54,7 @@ module.exports = {
   },
   services: [{
     label: 'Car (fastest)',
-    path: 'https://routing.orinoco.net/nav/route/v1'
+    path: 'http://localhost:5000/route/v1'
   }],
   layer: [{
     'openstreetmap.org': osm,
