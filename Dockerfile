@@ -1,7 +1,7 @@
 FROM alpine:3.5
 
 # Enables customized options using environment variables
-ENV OSRM_BACKEND='http://168.119.189.104/nav'
+ENV OSRM_BACKEND='https://168.119.189.104/nav'
 ENV OSRM_CENTER='38.8995,-77.0269'
 ENV OSRM_ZOOM='13'
 ENV OSRM_LANGUAGE='en'

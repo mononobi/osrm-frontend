@@ -54,7 +54,7 @@ module.exports = {
   },
   services: [{
     label: 'Car (fastest)',
-    path: 'http://168.119.189.104/nav/route/v1'
+    path: 'https://168.119.189.104/nav/route/v1'
   }],
   layer: [{
     'openstreetmap.org': osm,
